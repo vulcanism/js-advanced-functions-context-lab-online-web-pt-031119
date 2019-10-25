@@ -54,6 +54,12 @@ function wagesEarnedOnDate(givenDate) {
   return wageEarned
 }
 
+function findEmployeeByFirstName(array, firstName) {
+    for (const element of array) {
+       return firstName === element.firstName ? element : undefined
+    }
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
