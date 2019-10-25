@@ -60,6 +60,12 @@ function findEmployeeByFirstName(array, firstName) {
     }
 }
 
+function calculatePayroll(array) {
+  return array.reduce(function(memo, rec){
+          return memo + allWagesFor(rec)
+      }, 0)
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
